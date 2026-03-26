@@ -22,12 +22,10 @@ jobs:
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.8'
-
-      - name: Make gradlew executable
-        run: chmod +x gradlew || true
+          cache-disabled: true
 
       - name: Build mod
-        run: gradle build
+        run: gradle build --no-build-cache
 
       - name: Upload JAR artifact
         uses: actions/upload-artifact@v4
