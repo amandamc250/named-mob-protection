@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[4,)"
+license="MIT"
+
+[[mods]]
+    modId="namedmobprotection"
+    version="1.0.0"
+    displayName="Named Mob Protection"
+    description='''
+        Any mob with a name tag (any name at all) cannot take damage or be killed.
+        Works against players, other mobs, lava, fall damage, and everything else.
+        Simply give a mob a name tag to protect it. Remove the name to unprotect it.
+    '''
+
+[[dependencies.namedmobprotection]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.11,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies.namedmobprotection]]
+    modId="minecraft"
+    type="required"
+    versionRange="[1.21.11,)"
+    ordering="NONE"
+    side="BOTH"
